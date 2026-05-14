@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'supabase/functions/**'
+      - 'supabase/functions/**.'
+  workflow_dispatch:  # ← 加這行，允許手動觸發
 
 jobs:
   deploy:
